@@ -12,17 +12,25 @@
     <img src="Images/characterSelect.png" />
 
     <center>
-      <form method="post" action="">
-        <div>
-          <label for="name">Team 1</label>
-          <input type="text" id="team1" value="0" />
+
+      <label for="name">Team 1</label>
+        <div class="number-input">
+          <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" ></button>
+          <input class="quantity" min="0" name="quantity" value="1" type="number">
+          <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
         </div>
-        <div>
-          <label for="name">Team 2</label>
-          <input type="text" id="team2" value="0" />
+
+        <label for="name">Team 2</label>
+        <div class="number-input">
+          <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" ></button>
+          <input class="quantity" min="0" name="quantity" value="1" type="number">
+          <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
         </div>
-      </form>
+
+
     </center>
     <script src="JavaScript/main.js"></script>
   </body>
 </html>
+
+
