@@ -10,7 +10,7 @@ function addSpan() {
   for (let i = 0; i < 77; i++) {
     let span = document.createElement("span");
     span.addEventListener("click", () => {
-      span.style.background = "black";
+      span.classList.toggle("colorred");
     });
     document.getElementById("boxer").appendChild(span);
   }
