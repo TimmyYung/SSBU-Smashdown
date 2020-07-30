@@ -39,6 +39,7 @@
   
   
   .colorred{
+    transition: all 0.5s;
     background-color:black;
     opacity: 80%;
   }

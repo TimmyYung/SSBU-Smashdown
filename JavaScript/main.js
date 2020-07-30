@@ -16,4 +16,9 @@ function addSpan() {
   }
 }
 
+function resetAll(){
+  let boomer = document.querySelectorAll("span")
+  boomer.forEach(boomer => boomer.classList.remove("colorred"))
+}
+
 addSpan();
